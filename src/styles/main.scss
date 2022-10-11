@@ -1348,7 +1348,7 @@ body {
     &:before {
       display: none;
     }
-    
+
     .card.card-cta {
       max-width: 278px;
       margin: -43px auto;
@@ -1398,6 +1398,10 @@ body {
     display: block;
     max-width: 90px;
     margin-left: 12px;
+  }
+
+  .about-business-section {
+    padding-top: 188px;
   }
 }
 
