@@ -1039,7 +1039,7 @@ body {
         flex: 0 0 calc(50% - 8px);
 
         .card-body {
-          font-size: 11px;
+          font-size: 12px;
           line-height: 130%;
           padding-top: 32px;
           padding-bottom: 32px;
@@ -1130,9 +1130,9 @@ body {
       }
 
       .title {
-        font-size: 15.844px;
+        font-size: 15px;
         line-height: 120%;
-        margin-bottom: 18px;
+        margin-bottom: 14px;
 
         .text-black {
           color: #000;
@@ -1407,6 +1407,37 @@ body {
 
   .program-cards {
     overflow: hidden;
+  }
+
+  .program-section {
+    .card {
+      padding: 5px;
+
+      &.step-01 {
+        background: #fff url(../../images/icons/i-p-001-mob.png) no-repeat right -10px bottom 0;
+      }
+
+      &.step-02 {
+        background: #fff url("../../images/icons/i-p-002-mob.png") no-repeat right -2px bottom 0;
+      }
+
+      &.step-03 {
+        background: #fff url("../../images/icons/i-p-003-mob.png") no-repeat right 3px bottom 0;
+      }
+
+      &.step-05 {
+        background: #fff url("../../images/icons/i-p-005-mob.png") no-repeat right 17px bottom 0;
+      }
+
+      .title {
+        line-height: 110%;
+        margin-bottom: 12px;
+      }
+
+      .card-body {
+        padding: 16px 20px 16px 14px;
+      }
+    }
   }
 }
 
