@@ -1410,6 +1410,7 @@ body {
   }
 
   .program-section {
+    padding-bottom: 80px;
     .card {
       padding: 5px;
 
@@ -1437,6 +1438,21 @@ body {
       .card-body {
         padding: 16px 20px 16px 14px;
       }
+    }
+  }
+
+  .footer-section {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 57px;
+      height: 80px;
+      background: url("../../images/decor-8.png") no-repeat;
+      z-index: 10;
     }
   }
 }
