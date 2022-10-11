@@ -1296,6 +1296,7 @@ body {
 
   .about-business-section .main-img-block .card-wrapper {
     padding: 0 15px;
+    margin: 0;
   }
 
   .card-instruction {
@@ -1402,6 +1403,10 @@ body {
 
   .about-business-section {
     padding-top: 188px;
+  }
+
+  .program-cards {
+    overflow: hidden;
   }
 }
 
