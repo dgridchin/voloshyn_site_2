@@ -724,7 +724,11 @@ body {
   padding-top: 115px;
   position: relative;
   max-width: 1160px;
-  margin: 0 auto 154px;
+  margin: 0 auto 30px;
+
+  & + .d-flex {
+    margin: 0 0 154px;
+  }
 
   &:after {
     content: '';
@@ -742,14 +746,6 @@ body {
     background: url("../../images/bg-mask-6.png") no-repeat center / cover;
     border-radius: 40px;
     padding: 90px 100px 122px;
-
-    .btn {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -56px;
-      z-index: 10;
-    }
 
     img {
       margin-bottom: 32px;
@@ -1085,13 +1081,13 @@ body {
 
     .card-description {
       margin: 0 0 20px 0;
-      font-size: 11px;
+      font-size: 13px;
       line-height: 150%;
     }
 
     .card-result-panel {
       padding: 22px 12px;
-      font-size: 11px;
+      font-size: 13px;
       line-height: 150%;
       text-align: center;
       max-width: 230px;
@@ -1140,8 +1136,8 @@ body {
       }
 
       p {
-        font-size: 11px;
-        line-height: 140%;
+        font-size: 13px;
+        line-height: 110%;
         margin: 0;
 
         strong {
@@ -1202,7 +1198,11 @@ body {
     padding-top: 0;
     position: relative;
     max-width: calc(100% - 44px);
-    margin: 0 auto 36px;
+    margin: 0 auto 30px;
+
+    & + .d-flex {
+      margin: 0 0 40px;
+    }
 
     &:after {
       display: none;
@@ -1214,11 +1214,6 @@ body {
       border-radius: 10px;
       padding: 22px 30px 60px;
       text-align: center;
-      margin-bottom: 80px;
-
-      .btn {
-        bottom: -32px;
-      }
 
       img {
         margin: 0 auto 12px;
