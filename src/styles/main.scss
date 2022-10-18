@@ -552,6 +552,7 @@ body {
     right: 0;
     z-index: 10;
     top: -288px;
+    display: none;
   }
 
   .accordion {
@@ -891,6 +892,7 @@ body {
     letter-spacing: 0.4em;
     padding: 1.68rem 1.75rem calc(1.68rem - 6px);
   }
+
   .vp-hero-section {
     background-image: url('../../images/sections/hero-s-decor.png'), url('../../images/hero-bg-mob-2.png'), url("../../images/sections/mob-hero-bg.png");
     background-position: top right, bottom -290px center, top center;
@@ -947,7 +949,7 @@ body {
     }
 
     .hero-title {
-      max-width: 286px;
+//      max-width: 286px;
     }
 
     > .container {
@@ -972,7 +974,7 @@ body {
     }
 
     .inner-bg-container {
-      padding-bottom: 164px;
+      padding-bottom: 80px;
       > .container {
 //        max-width: 220px;
       }
@@ -1004,9 +1006,23 @@ body {
       padding-top: 10px;
       padding-bottom: 10px;
 
+      > svg {
+        width: auto;
+        max-height: 80px;
+        height: auto;
+      }
+
       &:nth-child(even) {
         padding-left: 0;
         padding-right: 0;
+      }
+
+      &:nth-last-child(-n+2) {
+        > svg {
+          max-width: 100%;
+          max-height: 114px;
+          height: auto;
+        }
       }
     }
 
