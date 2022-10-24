@@ -295,7 +295,8 @@ body {
 
 .vp-who-section {
   position: relative;
-  background: url('../../images/sections/phone-bg-new.png') bottom 280px right -80px no-repeat, url("../../images/sections/confetti-bg.png") top -380px center no-repeat;
+  background: url("../../images/sections/confetti-bg.png") top -380px center no-repeat;
+//  background: url('../../images/sections/phone-bg-new.png') bottom 280px right -80px no-repeat, url("../../images/sections/confetti-bg.png") top -380px center no-repeat;
   padding-top: 206px;
   padding-bottom: 240px;
 
@@ -359,7 +360,7 @@ body {
 
   .steps-list {
     max-width: 860px;
-    margin-bottom: 74px;
+    margin: 0 auto 74px;
 
     p {
       font-weight: 500;
@@ -739,7 +740,7 @@ body {
   }
 
   .vp-who-section {
-    background-size: 40% auto, cover;
+    background-size: cover;
   }
 
   .vp-text-section{
