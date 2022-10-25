@@ -217,6 +217,10 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  &.fs-110 {
+    font-size: 110px;
+  }
 }
 
 .vp-review-section, .vp-tariffs-section {
@@ -225,6 +229,24 @@ body {
   margin-top: -44px;
   position: relative;
   overflow: hidden;
+
+  .lesson-total-item {
+    margin-bottom: 70px;
+
+    img {
+      margin-bottom: 44px;
+    }
+
+    p {
+      font-family: 'Muller';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 130%;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  }
 
   .video-desk-arr {
     position: relative;
@@ -301,6 +323,14 @@ body {
 .vp-tariffs-section {
   .m-section-title {
     margin-bottom: 64px;
+  }
+
+  .inner-bg-container {
+    padding-bottom: 0;
+
+    &:before {
+      display: none;
+    }
   }
 
   .container {
@@ -397,12 +427,19 @@ body {
     margin-bottom: 20px;
   }
 
+  .m-bot-30 {
+    > .col-12 {
+      margin-bottom: 30px;
+    }
+  }
+
   .card {
     background-color: #1C1C1D;
     background-clip: border-box;
     border: 1px solid transparent;
     border-radius: 10px;
     height: 100%;
+    margin-bottom: 30px;
 
     ul {
       font-family: 'Muller';
@@ -440,6 +477,7 @@ body {
         letter-spacing: 0.3em;
         text-transform: uppercase;
         color: #FFFFFF;
+        display: block;
       }
     }
 
@@ -450,6 +488,29 @@ body {
 
       .top-info {
         flex-grow: 1;
+      }
+    }
+
+    &.card-vip {
+      background: #1C1C1D url("../../images/tariff-bg-gold.png") no-repeat top center;
+      .card-body {
+        display: block;
+        padding-top: 64px;
+        padding-bottom: 48px;
+
+        .row {
+          max-width: 920px;
+          margin: 0 auto;
+        }
+      }
+
+      .btn-block {
+        margin-bottom: 30px;
+      }
+
+      .bottom-info {
+        max-width: 320px;
+        margin: 0 auto;
       }
     }
   }
@@ -922,6 +983,36 @@ body {
 
   .title {
     margin-bottom: 55px;
+  }
+
+  &.tariff-section {
+    margin-top: -394px;
+    z-index: 0;
+    background: #D80023 url("../../images/money-bg.png") no-repeat center / cover;
+    padding-top: 494px;
+    padding-bottom: 94px;
+
+    .m-section-title {
+      font-family: 'Druk Cyr';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 90px;
+      line-height: 110%;
+      text-align: center;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #0E0E0E 8.45%, #595959 57.56%, #0E0E0E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 14px;
+    }
+
+    .card {
+      .card-body {
+        background:  #FFFFFF url("../../images/price-box-bg.png") no-repeat left -80px bottom -90px;
+      }
+    }
   }
 }
 
