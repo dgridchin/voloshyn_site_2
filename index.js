@@ -72,30 +72,30 @@ $(document).ready(function() {
     $('.js-create-order').attr('href', link)
 
 
-
-    var minutes = 14;
-    var seconds = 59;
-    setInterval(function () {
-        seconds--;
-        if (seconds <= 0) {
-            seconds = 59;
-            minutes--;
-        }
-
-        var secText = seconds;
-        var minText = minutes;
-
-        if (seconds <= 9) {
-            secText = '0'+seconds;
-        }
-        if (minutes <= 9) {
-            minText = '0'+minutes;
-        }
-
-        document.getElementById('timer-seconds').innerHTML = secText;
-        document.getElementById('timer-minutes').innerHTML = minText;
-
-        if (minutes < 0) document.location.reload();
-
-    }, 1000);
+    //
+    //var minutes = 14;
+    //var seconds = 59;
+    //setInterval(function () {
+    //    seconds--;
+    //    if (seconds <= 0) {
+    //        seconds = 59;
+    //        minutes--;
+    //    }
+    //
+    //    var secText = seconds;
+    //    var minText = minutes;
+    //
+    //    if (seconds <= 9) {
+    //        secText = '0'+seconds;
+    //    }
+    //    if (minutes <= 9) {
+    //        minText = '0'+minutes;
+    //    }
+    //
+    //    document.getElementById('timer-seconds').innerHTML = secText;
+    //    document.getElementById('timer-minutes').innerHTML = minText;
+    //
+    //    if (minutes < 0) document.location.reload();
+    //
+    //}, 1000);
 });

@@ -1148,6 +1148,10 @@ body {
 }
 
 @media (max-width: 992px) {
+  .m-section-title {
+    font-size: 46px;
+    line-height: 100%;
+  }
   .vp-section-subscribe {
     max-width: calc(100% - 30px);
     margin: 0 auto;
@@ -1217,10 +1221,55 @@ body {
     padding: 1.68rem 1.75rem calc(1.68rem - 6px);
   }
 
+  .vp-tariffs-section {
+    padding-top: 80px;
+
+    .btn-block+.btn-block {
+      margin-top: 26px;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    .m-section-title {
+      margin-bottom: 30px;
+    }
+
+    .card {
+      .card-title {
+        font-size: 46px;
+      }
+
+      .card-body {
+        padding-top: 42px;
+        padding-bottom: 42px;
+      }
+    }
+  }
+
   .vp-hero-section {
     background-image: url('../../images/sections/hero-s-decor.png'), url('../../images/hero-bg-mob-2.png'), url("../../images/sections/mob-hero-bg.png");
     background-position: top right, bottom -290px center, top center;
     background-size: auto, 90% auto, cover;
+
+    .p-t-main {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 140%;
+      margin-bottom: 5px;
+    }
+
+    .hero-font-title {
+      font-size: 40px;
+      line-height: 100%;
+
+      & + .float-wrapp {
+        svg {
+          max-width: 148px;
+        }
+      }
+    }
 
     .btn.btn-primary {
       min-width: 242px;
@@ -1244,6 +1293,10 @@ body {
       bottom: 23px;
       left: 50%;
       transform: translateX(-50%);
+
+      &.tr-page {
+        bottom: 64px;
+      }
 
       .btn {
         order: 1;
@@ -1276,7 +1329,7 @@ body {
 //      max-width: 286px;
     }
 
-    > .container {
+    > .container, .container-sm {
       padding-top: 130px;
       padding-bottom: 530px;
     }
@@ -1504,6 +1557,55 @@ body {
   .vp-who-section {
     .container {
       padding: 0 30px;
+    }
+  }
+
+  .m-section-title.fs-110 {
+    font-size: 46px;
+    line-height: 100%;
+  }
+
+  .vp-section-subscribe.tariff-section {
+    margin-top: 0;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+
+    .card .card-body {
+      background: #fff;
+    }
+
+    .m-section-title {
+      font-size: 32px;
+      margin-bottom: 12px;
+
+      & + p {
+        font-size: 12px;
+      }
+    }
+
+    & + .vp-review-section {
+      margin-top: -139px !important;
+
+      .footer-links-f {
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          font-size: 13px;
+          text-decoration: underline;
+          display: block;
+          margin: 10px 0;
+        }
+      }
+
+      .lesson-total-item p {
+        font-size: 16px;
+        line-height: normal;
+      }
     }
   }
 }
