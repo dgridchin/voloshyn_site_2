@@ -25,10 +25,10 @@
 
 @font-face {
   font-family: 'Druk Cyr';
-  src: local('Druk Cyr Super'), local('Druk-Cyr-Super'),
-  url('../../src/fonts/DrukCyr-Super.woff2') format('woff2'),
-  url('../../src/fonts/DrukCyr-Super.woff') format('woff'),
-  url('../../src/fonts/DrukCyr-Super.ttf') format('truetype');
+  src: local('Druk Cyr Bold'), local('Druk-Cyr-Bold'),
+  url('../../src/fonts/DrukCyr-Bold.woff2') format('woff2'),
+  url('../../src/fonts/DrukCyr-Bold.woff') format('woff'),
+  url('../../src/fonts/DrukCyr-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -144,7 +144,6 @@ body {
   .hero-font-title {
     font-family: 'Druk Cyr';
     font-style: normal;
-    font-weight: 900;
     font-size: 105.319px;
     line-height: 103%;
     text-transform: uppercase;
@@ -207,7 +206,6 @@ body {
 .m-section-title {
   font-family: 'Druk Cyr';
   font-style: normal;
-  font-weight: 900;
   font-size: 120px;
   line-height: 100%;
   text-align: center;
@@ -367,7 +365,6 @@ body {
   .price-block {
     font-family: 'Druk Cyr';
     font-style: normal;
-    font-weight: 700;
     font-size: 94px;
     line-height: 110%;
     text-align: center;
@@ -459,7 +456,6 @@ body {
     .card-title {
       font-family: 'Druk Cyr';
       font-style: normal;
-      font-weight: 700;
       font-size: 56px;
       line-height: 110%;
       text-align: center;
@@ -995,7 +991,6 @@ body {
     .m-section-title {
       font-family: 'Druk Cyr';
       font-style: normal;
-      font-weight: 900;
       font-size: 90px;
       line-height: 110%;
       text-align: center;
