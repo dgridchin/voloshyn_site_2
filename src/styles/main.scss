@@ -387,6 +387,22 @@ body {
     }
   }
 
+  .old-price {
+    font-family: 'Druk Cyr';
+    font-size: 66px;
+    line-height: 120%;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #828282;
+    margin-bottom: 5px;
+
+    &.second-price {
+      font-size: 50px;
+      color: #525252;
+      margin-bottom: 24px;
+    }
+  }
+
   .card-dots {
     display: flex;
     flex-direction: row;
@@ -1582,6 +1598,11 @@ body {
 
     & + .vp-review-section {
       margin-top: -139px !important;
+
+      .lesson-total-item img {
+        max-width: 68%;
+
+      }
 
       .footer-links-f {
         flex-direction: column !important;
