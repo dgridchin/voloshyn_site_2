@@ -168,7 +168,11 @@ body {
     left: -37px;
 
     &.date-label {
-      left: 159px;
+      left: 138px;
+    }
+
+    &.online-label {
+      left: 300px;
     }
   }
 
@@ -1334,6 +1338,10 @@ body {
       &.date-label {
         left: 90px;
       }
+
+      &.online-label {
+        left: 190px;
+      }
     }
 
     .hero-title {
@@ -1643,10 +1651,7 @@ body {
       left: -15px;
       height: auto;
     }
-
-    .hero-label.date-label {
-      left: 100px;
-    }
+    
   }
 
   .vp-who-section {
