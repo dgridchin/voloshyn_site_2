@@ -7243,7 +7243,8 @@ body {
   font-size: 20px;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
   text-transform: uppercase;
   border: none;
   padding: 2.844rem 1.75rem calc(2.844rem - 6px);
@@ -8080,7 +8081,8 @@ body {
     font-size: 15px;
     line-height: 13px;
     letter-spacing: 0.1em;
-    padding: 1.68rem 1.75rem calc(1.68rem - 6px); }
+    padding: 1.68rem 1.75rem calc(1.68rem - 6px);
+    white-space: nowrap; }
   .vp-tariffs-section {
     padding-top: 80px; }
     .vp-tariffs-section .btn-block + .btn-block {
@@ -8150,7 +8152,7 @@ body {
         left: 190px; }
     .vp-hero-section > .container, .vp-hero-section .container-sm {
       padding-top: 130px;
-      padding-bottom: 530px; }
+      padding-bottom: 600px; }
   .vp-review-section {
     padding-top: 96px; }
     .vp-review-section .container.video-container {
