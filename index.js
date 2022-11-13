@@ -1,3 +1,9 @@
+const validateEmail = (email) => {
+    return email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
+
 $(document).ready(function() {
     // Политика конфиденциальности
     const url = document.location.href;
@@ -11,14 +17,51 @@ $(document).ready(function() {
 
 
 
+    // Оферта
     var page = 'page9';
     var hash = window.location.hash;
     if (hash) {
         page = hash.replace('#', '');
     }
     page = page.replace('page', '');
-
     $('.js-doc-link').attr({'href': 'https://pay.voloshyn.site/oferta/'+page});
+
+    // Маска
+    $('input[type="tel"]').mask('+999999999999');
+
+
+
+    // Регистрация на МК
+    $('form[name="registration"]').on('submit', function (e) {
+        e.preventDefault();
+
+
+        $('.js-email-error').hide();
+        $('.js-phone-error').hide();
+
+
+
+
+        var form = $(this);
+        var email = form.find('input[name="email"]');
+        var phone = form.find('input[name="phone"]');
+        var section = form.find('input[name="section"]');
+
+
+
+        if (!validateEmail(email.val())) {
+            $('.js-email-error').show();
+        }
+        if (phone.val().length < 10) {
+            $('.js-phone-error').show();
+        }
+
+        $.post('https://gridchin.tech/api/create_client_application', {email: email, phone: phone, section: section}, function () {
+            document.location.href = '/success-registration';
+        });
+
+
+    })
 
 
     // var links = [
