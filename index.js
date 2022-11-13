@@ -1,4 +1,16 @@
 $(document).ready(function() {
+    // Политика конфиденциальности
+    const url = document.location.href;
+    const { hostname } = new URL(url);
+
+    var link = 'https://voloshyn.site/';
+    if (hostname == 'voloshyn.site') link = 'https://voloshyn.site/';
+    if (hostname == 'voloshyn-xx.com.ua') link = 'https://voloshyn-xx.com.ua/';
+
+    $('.js-domain-name').text(link);
+
+
+
     var page = 'page9';
     var hash = window.location.hash;
     if (hash) {
