@@ -5,6 +5,7 @@ const validateEmail = (email) => {
 };
 
 $(document).ready(function() {
+    console.log('start script');
     // Политика конфиденциальности
     const url = document.location.href;
     const { hostname } = new URL(url);
@@ -33,6 +34,7 @@ $(document).ready(function() {
 
     // Регистрация на МК
     $('form[name="registration"]').on('submit', function (e) {
+        console.log('submit form');
         e.preventDefault();
 
 
