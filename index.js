@@ -57,6 +57,7 @@ $(document).ready(function() {
         }
 
         $.post('https://gridchin.tech/api/create_client_application', {email: email, phone: phone, section: section}, function () {
+            console.log('Hello world')
             document.location.href = '/success-registration';
         });
 
