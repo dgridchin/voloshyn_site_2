@@ -62,8 +62,8 @@ $(document).ready(function() {
         }
 
         if (!error) {
-            $.post('https://gridchin.tech/api/create_client_application', {email: email, phone: phone, section: section}, function () {
-                console.log('Hello world')
+            $.get('https://gridchin.tech/api/create_client_application?email='+email+'&phone='+phone+'&section='+section, function () {
+                console.log('success')
                 document.location.href = '/success-registration';
             });
         }
