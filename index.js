@@ -50,20 +50,23 @@ $(document).ready(function() {
         var section = form.find('input[name="section"]');
 
 
+        var error = false;
 
         if (!validateEmail(email.val())) {
             $('.js-email-error').show();
+            error = true;
         }
         if (phone.val().length < 10) {
             $('.js-phone-error').show();
+            error = true;
         }
 
-        $.post('https://gridchin.tech/api/create_client_application', {email: email, phone: phone, section: section}, function () {
-            console.log('Hello world')
-            document.location.href = '/success-registration';
-        });
-
-
+        if (!error) {
+            $.post('https://gridchin.tech/api/create_client_application', {email: email, phone: phone, section: section}, function () {
+                console.log('Hello world')
+                document.location.href = '/success-registration';
+            });
+        }
     })
 
 
