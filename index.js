@@ -38,31 +38,31 @@ $(document).ready(function() {
         e.preventDefault();
 
 
-        $('.js-email-error').hide();
+        // $('.js-email-error').hide();
         $('.js-phone-error').hide();
 
 
 
 
         var form = $(this);
-        var email = form.find('input[name="email"]');
+        // var email = form.find('input[name="email"]');
         var phone = form.find('input[name="phone"]');
         var section = form.find('input[name="section"]');
 
 
         var error = false;
 
-        if (!validateEmail(email.val())) {
-            $('.js-email-error').show();
-            error = true;
-        }
+        // if (!validateEmail(email.val())) {
+        //     $('.js-email-error').show();
+        //     error = true;
+        // }
         if (phone.val().length < 10) {
             $('.js-phone-error').show();
             error = true;
         }
 
         if (!error) {
-            $.get('https://gridchin.tech/api/create_client_application?email='+email.val()+'&phone='+phone.val()+'&section='+section.val(), function () {
+            $.get('https://gridchin.tech/api/create_client_application?phone='+phone.val()+'&section='+section.val(), function () {
                 console.log('success')
                 document.location.href = '/success-registration';
             });
