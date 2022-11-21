@@ -28,7 +28,7 @@ $(document).ready(function() {
     $('.js-doc-link').attr({'href': 'https://pay.voloshyn.site/oferta/'+page});
 
     // Маска
-    $('input[type="tel"]').mask('+999999999999');
+    $('input[type="tel"]').mask('+9999999999999');
 
 
 
