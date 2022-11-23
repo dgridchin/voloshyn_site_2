@@ -47,6 +47,7 @@ $(document).ready(function() {
         var form = $(this);
         // var email = form.find('input[name="email"]');
         var phone = form.find('input[name="phone"]');
+        var name = form.find('input[name="name"]');
         var section = form.find('input[name="section"]');
 
 
@@ -62,7 +63,7 @@ $(document).ready(function() {
         }
 
         if (!error) {
-            $.get('https://gridchin.tech/api/create_client_application?phone='+phone.val()+'&section='+section.val(), function () {
+            $.get('https://gridchin.tech/api/create_client_application?phone='+phone.val()+'&section='+section.val()+'&name='+name.val(), function () {
                 if (section.val() == 'application') {
                     document.location.href = '/success-application';
                 } else {
