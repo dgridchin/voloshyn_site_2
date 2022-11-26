@@ -61,6 +61,11 @@ $(document).ready(function() {
             $('.js-phone-error').show();
             error = true;
         }
+        if (name.val().length < 2) {
+            $('.js-name-error').show();
+            error = true;
+        }
+
 
         if (!error) {
             $.get('https://gridchin.tech/api/create_client_application?phone='+phone.val()+'&section='+section.val()+'&name='+name.val(), function () {
