@@ -5,7 +5,7 @@ const validateEmail = (email) => {
 };
 
 $(document).ready(function() {
-    console.log('start script');
+    console.log('start script 2');
     // Политика конфиденциальности
     const url = document.location.href;
     const { hostname } = new URL(url);
