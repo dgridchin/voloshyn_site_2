@@ -61,14 +61,21 @@ $(document).ready(function() {
             $('.js-phone-error').show();
             error = true;
         }
-        if (name.val().length < 2) {
+        if (name && name.val().length < 2) {
             $('.js-name-error').show();
             error = true;
         }
 
+        var name_text = false;
+        if (name) {
+            name_text = name.val();
+        }
+
+
+
 
         if (!error) {
-            $.get('https://gridchin.tech/api/create_client_application?phone='+phone.val()+'&section='+section.val()+'&name='+name.val(), function () {
+            $.get('https://gridchin.tech/api/create_client_application?phone='+phone.val()+'&section='+section.val()+'&name='+name_text, function () {
                 if (section.val() == 'application') {
                     document.location.href = '/success-application';
                 } else {
