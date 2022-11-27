@@ -61,13 +61,16 @@ $(document).ready(function() {
             $('.js-phone-error').show();
             error = true;
         }
-        if (name && name.val().length < 2) {
-            $('.js-name-error').show();
-            error = true;
+        if (name.length) {
+            if (name.val().length < 2) {
+                $('.js-name-error').show();
+                error = true;
+            }
+
         }
 
         var name_text = false;
-        if (name) {
+        if (name.length) {
             name_text = name.val();
         }
 
